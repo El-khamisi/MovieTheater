@@ -21,7 +21,8 @@ autoloading. This directory also houses the assets such as
 images, JavaScript, and CSS.
 * ### The public/images directory </br>
 The directory contains movies thumbnails that have been
-uploaded and the file path will be added to the database.### * The resources directory
+uploaded and the file path will be added to the database.
+* ### The resources directory
 The directory contains the views as well as the raw,
 un-compiled assets such as SCSS or JavaScript. This directory
 also houses all development-stage files.
