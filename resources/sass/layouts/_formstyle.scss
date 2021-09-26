@@ -1,0 +1,131 @@
+.form {
+    position: fixed;
+    display: none;
+    bottom: 25px;
+    left: 25px;
+    z-index: 3;
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 320px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+}
+
+.input-file {
+    height: 35px;
+}
+
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 95px;
+}
+
+.cut-short {
+    width: 150px;
+}
+
+.descriptio {
+    height: 120px;
+}
+
+.input {
+    &:focus~.cut,
+    &:not(:placeholder-shown)~.cut {
+        transform: translateY(8px);
+    }
+}
+
+.pre-placeholder {
+    color: #fff;
+    font-size: 1.3em;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input {
+    &:focus~.pre-placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+    }
+    &:not(:placeholder-shown)~.pre-placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+        color: #808097;
+    }
+    &:focus~.pre-placeholder {
+        color: #dc2f55;
+    }
+}
+
+.submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    &:active {
+        background-color: #06b;
+    }
+}
+
+.rate-title {
+    margin-top: 120px;
+    color: #fff;
+}
+
+.bubble {
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 4px 12px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+}
+
+.bubble::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: red;
+    position: relative;
+}

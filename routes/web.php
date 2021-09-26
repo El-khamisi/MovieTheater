@@ -1,0 +1,29 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\movies;
+use App\Http\Controllers\users;
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+//Home Routing
+Route::get('/', [movies::class, 'index']);
+
+Route::post('/add-movie', [movies::class, 'addMovie']);
+
+Route::get('/login', [users::class, 'index']);
+Route::post('/login', [users::class, 'login']);
+
+Route::post('/signup', [users::class, 'signup']);
+Route::post('/delete-movie', [movies::class, 'dltMovie']);

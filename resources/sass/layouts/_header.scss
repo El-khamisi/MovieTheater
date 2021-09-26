@@ -1,0 +1,23 @@
+/*
+ * Header Styles
+ */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    margin-top: 5%;
+    align-items: stretch;
+    .logo img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.user {
+    position: relative;
+    i {
+        font-size: 5em;
+    }
+}
