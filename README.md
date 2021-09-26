@@ -33,7 +33,7 @@ The file contains all npm scripts and Dependencies.
 * The webpack.mix.js file </br>
 The file contains all mix API configurations.
 ## ERD Diagrams :
-![ERD Digrams] (public/images/ERD.png)
+![ERD Digrams](public/images/ERD.png)
 
 
 ## Basic Directory Structure:
